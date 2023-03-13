@@ -13,6 +13,8 @@ public class Uloha3BMI {
 		System.out.println("Zadaj vyska [cm]: ");
 		vyska = sc.nextInt();
 		
+		
+		
 		double bmi = 0, v = vyska / 100.0;
 		
 		bmi = hmotnost / (v * v);
