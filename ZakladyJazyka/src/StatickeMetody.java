@@ -21,6 +21,8 @@ public class StatickeMetody {
 		int[] vytvorenePole = vytvorPole(10);
 		vypisPole(vytvorenePole);
 		
+		System.out.println(spocitaj(1, 10, 123, 456, 789, 111111));
+		
 	}
 	
 	//metoda bez navratoveho typu
@@ -56,6 +58,14 @@ public class StatickeMetody {
 	static int spocitaj(int x, int y, int z) {
 		int sucet = x + y + z;
 		return sucet;
+	}
+	
+	static int spocitaj(int... cisla) {
+		int suma = 0;
+		for(int c: cisla) {
+			suma += c;
+		}
+		return suma;
 	}
 	
 	static double spocitaj(double x, double y, double z) {
