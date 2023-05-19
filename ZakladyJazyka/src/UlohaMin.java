@@ -1,3 +1,4 @@
+import java.util.Scanner;
 
 public class UlohaMin {
 	
@@ -15,7 +16,29 @@ public class UlohaMin {
 	 */
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
+		
+		Scanner sc = new Scanner(System.in);
+		int pocet = 0;
+		int min = 999;
+		int i = 0;
+		
+		System.out.println("Zadaj pocet ludi: ");
+		pocet = sc.nextInt();
+		
+		int[] vyska = new int[pocet];
+		do {
+			System.out.println("Zadaj vysku: ");
+			vyska[i] = sc.nextInt();
+			i++;
+		}while(i < pocet);
+		
+		for(int v: vyska) {
+			if(v < min) {
+				min = v;
+			}
+		}
+		
+		System.out.println("Najmensi clovek ma vysku: " + min + " cm");
 
 	}
 
