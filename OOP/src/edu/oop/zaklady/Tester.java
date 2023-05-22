@@ -1,5 +1,7 @@
 package edu.oop.zaklady;
 
+import edu.oop.zapuzdrenie.Ucet;
+
 public class Tester {
 
 	public static void main(String[] args) {
@@ -44,6 +46,15 @@ public class Tester {
 		//2 konstruktory
 		//4 metody (2 bez a 2 s navratovou hodnotou)
 		
+		Osoba os4 = new Osoba("Petra", "Sipkova");
+		
+		os4.info();
+		
+		Ucet u;
+		
+		u = new Ucet("123456876", 444);
+		
+		u.vklad(111);
 	}
 
 }

@@ -17,11 +17,19 @@ public class Osoba {
 		pohlavie = 'm';
 	}
 	
-	Osoba(String m, String p, int v, char pp){
-		meno = m;
-		priezvisko = p;
-		vek = v;
-		pohlavie = pp;
+	Osoba(String meno, String priezvisko, int vek, char pohlavie){
+		this.meno = meno;
+		this.priezvisko = priezvisko;
+		this.vek = vek;
+		this.pohlavie = pohlavie;
+	}
+	
+	Osoba(String meno, String priezvisko){
+//		this.meno = meno;
+//		this.priezvisko = priezvisko;
+//		this.vek = 10;
+//		this.pohlavie = 'z';		
+		this(meno, priezvisko, 10, 'z');		
 	}
 	
 	//metody
